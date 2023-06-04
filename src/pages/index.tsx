@@ -24,7 +24,7 @@ export default function Home() {
         </h1>
 
         <div className="w-full flex flex-col gap-3">
-          <label htmlFor="url">Link</label>
+          <label htmlFor="url">URL</label>
           <input
             id="url"
             type="text"

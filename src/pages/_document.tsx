@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Encurtador de link - Thiago Machado</title>
+        <title>Encurtador de URL - Thiago Machado</title>
       </Head>
       <body>
         <Main />
