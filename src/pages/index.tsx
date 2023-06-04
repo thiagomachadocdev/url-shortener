@@ -8,11 +8,11 @@ export default function Home() {
   const url = process.env.NEXT_PUBLIC_URL
 
   async function shortenURL() {
-    const response = await axios.post('/shorten-url', {
+    const url = await axios.post('/shorten-url', {
       originalUrl,
     })
 
-    setSlug(response.data.slug)
+    setSlug(url.data.slug)
   }
 
   return (
