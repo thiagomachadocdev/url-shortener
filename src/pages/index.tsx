@@ -16,15 +16,15 @@ export default function Home() {
   }
 
   return (
-    <div className="h-screen w-full flex items-center justify-center">
+    <div className="h-screen w-full flex items-center justify-center p-3">
       <div className="flex flex-col gap-6 lg:gap-12 items-center">
-        <h1 className="text-4xl lg:text-5xl font-bold text-center">
+        <h1 className="text-3xl lg:text-5xl font-bold text-center">
           Minimize os links, <br />
           maximize o alcance!
         </h1>
 
         <div className="w-full flex flex-col gap-3">
-          <label htmlFor="url">URL</label>
+          <label htmlFor="url">Link</label>
           <input
             id="url"
             type="text"
@@ -40,12 +40,14 @@ export default function Home() {
           Encurtar
         </button>
 
-        <div className="w-full flex flex-col gap-3">
-          <label htmlFor="url">Resultado</label>
-          <div className="p-4 bg-white border border-gray-500 rounded-lg w-full">
-            {slug && `${url}/${slug}`}
+        {slug && (
+          <div className="w-full flex flex-col gap-3">
+            <label htmlFor="url">Resultado</label>
+            <div className="p-4 bg-white border border-gray-500 rounded-lg w-full">
+              {slug && `${url}/${slug}`}
+            </div>
           </div>
-        </div>
+        )}
 
         <span>
           Desenvolvido por{' '}
